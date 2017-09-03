@@ -1,0 +1,7 @@
+data = [{
+    "name": "Core Java",
+    "department": "CSE"
+}, {
+    "name": "Java EE",
+    "department": "CSE"
+}]

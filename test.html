@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="/custom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body ng-controller="timerController">
+
+    <div class="quiz-time ">
+      <div ng-class="fillClass">
+        <span id=""><div class="PreTime-err" id="Pre-err">
+										<h3 class="timersec" id="timerSection"></h3>
+									</div></span>
+        <div class="slice">
+          <div id="timer" class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+    </div>
+    <span id=""><div class="PreTime-err textBlink"
+								id="timeEnd-err"></div></span>
+                <p ng-show="end"><span style="color:red">!!!!Test Ended!!!!</span></p>
+</body>
+
+</html>
